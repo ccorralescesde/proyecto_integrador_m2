@@ -249,14 +249,16 @@
 
 .registro-botones {
     display: flex;
+    padding: 10px 20px;
     flex-direction: row;
     justify-content: flex-end;
     margin-top: 24px;
 }
 
 .btn-cancelar {
+   display: flex;
     padding: 10px 20px;
-    border: 1px solid black;
-    border-radius: 6px;
-    margin-right: 10px;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 24px;
 }
