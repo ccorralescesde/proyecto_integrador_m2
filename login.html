@@ -19,7 +19,7 @@
   </head>
   <body class="d-flex flex-column min-vh-100">
     <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow"">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
         <section class="container-fluid">
           <span class="navbar-brand fw-bold">Novamentis</span>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,20 +39,29 @@
       </nav>
     </header>
 
-    <main class="login-container flex-grow-1">
-      <section class="form-login">
+    <main class="login-container flex-grow-1 d-flex align-items-center py-5">
+      <section class="container">
+      <section class="row align-items-center">
+      <section class="col-12 col-lg-6 mb-4 mb-lg-0">
+        <section class="card shadow-sm p-4">
+          <h2 class="mb-4 text-center">Iniciar sesión</h2>
         <form action="" method="POST">
-          <label for="correo">Correo estudiante</label>
+
+          <section class="mb-3">
+          <label for="correo" class="form-label">Correo estudiante</label>
           <input
             type="email"
             name="correo"
             id="correo"
             placeholder="Ingrese su correo"
-            required
+            required class="form-control"
           />
+          </section>
 
-          <label for="contrasena">Contraseña</label>
-          <input
+
+          <section class="mb-3">
+          <label for="contrasena" class="form-label">Contraseña</label>
+          <input class="form-control"
             type="password"
             name="contrasena"
             id="contrasena"
@@ -60,23 +69,31 @@
             required
             minlength="6"
           />
+          </section>
 
-          <input type="checkbox" name="recordar" id="recordar" />
-          <label for="recordar">Recordar contraseña</label>
+          <section class="mb-3 form-check">
+          <input type="checkbox" name="recordar" id="recordar" class="form-check-input" />
+          <label for="recordar" class="form-label">Recordar contraseña</label>
+          </section>
 
-          <button type="submit" class="btn-login">Iniciar sesión</button>
+          <button type="submit" class="btn btn-primary w-100 mb-3">Iniciar sesión</button>
 
-          <a href="registro_estud.html">Crear cuenta</a>
-          <a href="#">Restablecer contraseña</a>
+          <section class="d-flex justify-content-between"> 
+          <a href="registro_estud.html" class="text-decoration-none small">Crear cuenta</a>
+          <a href="#" class="text-decoration-none small text-secondary">Restablecer contraseña</a>
+          </section>
         </form>
+        </section>
       </section>
 
-      <section class="img-login">
-        <img src="img/login.png" alt="Portal de estudiantes Novamentis" />
+      <section class="col-12 col-lg-6 text-center">
+        <img class="img-fluid rounded" src="img/login.png" alt="Portal de estudiantes Novamentis" />
+      
+      </section>
       </section>
     </main>
 
-    <footer class="footer py-3 bg-dark text-white fexed">
+    <footer class="footer py-3 bg-dark text-white flexed">
       <section class="container text-center">
       <p class="mb-1">&copy; 2026 Novamentis. Todos los derechos reservados.</p>
       <p class="mb-0">Desarrollado por EAM 2026</p>
